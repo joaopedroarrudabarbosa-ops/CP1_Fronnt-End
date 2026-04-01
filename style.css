@@ -1,0 +1,124 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    color: white;
+    background-color: #064661;
+    font-size: 40px;
+    padding: 50px 40px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.paisagem_praia {
+    width: 100%;
+    height: 400px;
+}
+
+.titulo1 {
+    font-size: 30px;
+    color: #064661;
+    margin: 40px 0px 20px 40px;
+}
+
+.texto1 {
+    font-size: 20px;
+    margin: 0px 40px 40px 40px;
+}
+
+.titulo2 {
+    font-size: 30px;
+    color: #064661;
+    margin: 40px 0px 20px 40px;
+}
+
+.div-titulo1 div-texto1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+.cabana {
+    width: 250px;
+    height: 250px;
+    margin-left: 40px;
+}
+
+.topico {
+    font-size: 30px;
+    color: #064661;
+    margin: 40px 0px 20px 40px;
+    text-align: center;
+}
+
+.xyz {
+    display: flex;
+    justify-content: center;
+}
+
+.div-x {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 40px 40px;
+    background-color: #99BEDF;
+    border-color: #99BEDF;
+    border-width: 30px;
+    border-style: solid;    
+    border-radius: 15%;
+}
+
+.div-y {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 40px 40px;
+    background-color: #064661B2;
+    border-color: #064661B2;
+    border-width: 30px;
+    border-style: solid;    
+    border-radius: 15%;
+
+}
+
+.div-z {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 40px 40px;
+    background-color: #99BEDF;
+    border-color: #99BEDF;
+    border-width: 30px;
+    border-style: solid;    
+    border-radius: 15%;
+}
+
+.galeria {
+    font-size: 30px;
+    color: #064661;
+    margin: 40px 0px 20px 40px;
+}   
+
+.gallery {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    gap: 30px;
+}
+
+.gallery img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20%;
+}
+
+.contato {
+    font-size: 30px;
+    color: #064661;
+    margin: 40px 0px 20px 40px;
+    text-align: center;
+}
+
