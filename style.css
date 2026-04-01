@@ -1,124 +1,143 @@
 body {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    background-color: #f0edf5; /* Cor de fundo lilás clarinho */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
+    color: #333;
 }
 
-h1 {
+/* Header e Banner */
+.cabeca {
+    background-color: #0b4a60; /* Azul escuro do topo */
     color: white;
-    background-color: #064661;
-    font-size: 40px;
-    padding: 50px 40px;
-    margin: 0px;
-    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+}
+
+.cabeca h1 {
+    margin-left: 50px;
+    font-size: 24px;
 }
 
 .paisagem_praia {
     width: 100%;
-    height: 400px;
+    display: block;
 }
 
-.titulo1 {
-    font-size: 30px;
-    color: #064661;
-    margin: 40px 0px 20px 40px;
-}
-
-.texto1 {
-    font-size: 20px;
-    margin: 0px 40px 40px 40px;
-}
-
-.titulo2 {
-    font-size: 30px;
-    color: #064661;
-    margin: 40px 0px 20px 40px;
-}
-
-.div-titulo1 div-texto1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;  
-}
-
-.cabana {
-    width: 250px;
-    height: 250px;
-    margin-left: 40px;
+/* Títulos e Textos */
+.titulo1, .titulo2,.galeria {
+    color: #1a4d62;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 40px 0 15px 50px;
 }
 
 .topico {
-    font-size: 30px;
-    color: #064661;
-    margin: 40px 0px 20px 40px;
-    text-align: center;
+    color: #1a4d62;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 40px 0 15px 43%;
+    
 }
 
+.texto1 {
+    margin: 0 50px 30px 50px;
+    line-height: 1.6;
+}
+
+/* Layout Lado a Lado (Texto + Cabana) */
+.div-texto1 {
+    display: flex; /* Coloca um ao lado do outro */
+    padding: 0 50px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.texto2 {
+    flex: 1; /* Ocupa o espaço da esquerda */
+    line-height: 1.6;
+}
+
+.cabana {
+    width: 450px; /* Tamanho fixo da imagem */
+    border-radius: 4px;
+}
+
+/* Blocos de Preço (XYZ) */
 .xyz {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-.div-x {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 40px 40px 40px;
-    background-color: #99BEDF;
-    border-color: #99BEDF;
-    border-width: 30px;
-    border-style: solid;    
-    border-radius: 15%;
-}
-
-.div-y {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 40px 40px 40px;
-    background-color: #064661B2;
-    border-color: #064661B2;
-    border-width: 30px;
-    border-style: solid;    
-    border-radius: 15%;
-
-}
-
-.div-z {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 40px 40px 40px;
-    background-color: #99BEDF;
-    border-color: #99BEDF;
-    border-width: 30px;
-    border-style: solid;    
-    border-radius: 15%;
-}
-
-.galeria {
-    font-size: 30px;
-    color: #064661;
-    margin: 40px 0px 20px 40px;
-}   
-
-.gallery {
+.div-x, .div-y, .div-z {
     width: 250px;
-    height: 250px;
-    display: flex;
-    gap: 30px;
-}
-
-.gallery img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    border-radius: 20%;
-}
-
-.contato {
-    font-size: 30px;
-    color: #064661;
-    margin: 40px 0px 20px 40px;
+    padding: 20px;
+    border: 2px solid #7ea8c9;
+    border-radius: 8px;
     text-align: center;
 }
 
+.div-x, .div-z { background-color: #a7c7e0; } /* Cor clara */
+.div-y { background-color: #4f7b91; color: white; } /* Bloco central escuro */
+
+/* Galeria de Imagens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 50px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Faz a imagem preencher o quadrado sem distorcer */
+    border-radius: 25px; /* Bordas bem arredondadas como na foto */
+}
+
+/* Contato */
+
+.contato{
+    color: #1a4d62;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 40px 0 15px 43%;
+}
+/* Centraliza o bloco de contatos, mas mantém o texto alinhado à esquerda */
+.caixa-contatos {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center; /* Centraliza o bloco na tela deu errado isso não usar */
+}
+
+.caixa-contatos p {
+    margin: 8px 0;
+    color: #444;
+    font-family: sans-serif;
+    width: 250px; /* Largura fixa para os ícones ficarem alinhados na vertical */
+    display: flex;
+    margin: 8px 0 15px 5%;
+}
+
+/* Adicionando os ícones usando CSS (sem precisar de imagens) */
+.item-email::before { content: "✉️"; margin-right: 15px; font-size: 18px; }
+.item-tel::before   { content: "📞"; margin-right: 15px; font-size: 18px; }
+.item-end::before   { content: "📍"; margin-right: 15px; font-size: 18px; }
+
+/* Rodapé */
+.rodape {
+    background-color: #0b4a60; /* Mesmo azul escuro que você usou no topo */
+    color: white;              /* Cor do texto branca */
+    text-align: center;        /* Centraliza o texto no meio da tela */
+    padding: 30px 0;           /* Dá um espaço "gordinho" em cima e embaixo do texto */
+    margin-top: 50px;          /* Dá um espaço entre a parte de contato e o rodapé */
+}
+
+.rodape p {            
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.6;          
+}
